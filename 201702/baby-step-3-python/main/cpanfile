@@ -1,0 +1,6 @@
+requires 'CGI';
+requires 'CGI::PSGI';
+requires 'Plack::Util';
+requires 'Plack::Request';
+requires 'Moose';
+requires 'Data::Dumper';

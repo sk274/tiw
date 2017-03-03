@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "tiw",
+      "image": "sk274/tiw-baby-step-4-app:latest",
+      "environment": [
+        {
+          "name": "Container",
+          "value": "PSGI"
+        }
+      ],
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 5001
+        }
+      ]
+    }
+  ]
+}
